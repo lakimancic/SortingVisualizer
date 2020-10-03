@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sorting Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+    <script src="Algorithms.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="buttons">
+      <button id="newarr" onclick="newArray()">New Array</button>
+      <p class="lbl">Number of Bars:</p>
+      <input type="number" id="barnum" min="5" max="200">
+      <select name="algo" id="algo">
+        <option value="" selected disabled hidden>Choose an Algorithm</option>
+        <option value="1">Selection Sort</option>
+        <option value="2">Bubble Sort</option>
+        <option value="3">Insertion Sort</option>
+      </select>
+      <button id="sorti" onclick="visualizeSort()" disabled>Sort</button>
+      <button id="stopi" onclick="stopSorting()" disabled>Stop</button>
+    </div>
+    <div class="app-content">
+
+    </div>
+  </body>
+</html>
